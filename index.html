@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gotest.io</title>
+
+    <style>
+        .code-offset {
+            color: black;
+            display: inline;
+            font-size: 1.1em;
+            background-image: linear-gradient(#fff 60%, #5DC9E2 60%);
+        }
+
+        main {
+            font-family: sans-serif;
+            font-size: 1.1em;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 20px;
+        }
+
+        .container>* {
+            width: 100%;
+            max-width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>gotest.io</h2>
+            <h4>Simplified test output, tracked over time. But why?!</h4>
+
+            <p>
+                We love <code class="code-offset">go test&nbsp;</code> but even a relatively small project will dump
+                <i>a
+                    lot</i> of output.
+            <p>
+                Most CI systems and your console print test output to a log window, but these are hard to comb through
+                and web-based UIs just feel buggy. Even more, all you care about in the moment is what failed. Which
+                means searching for the
+                literal string "<b><i>--- FAIL</i></b>".
+            </p>
+            <p>We can do better. Not only by surfacing failures, but summarizing how long
+                <code class="code-offset">go test&nbsp;</code> took, from individual subtests to the entire run.
+            </p>
+            <p>
+                Bonus, we can track tests over time. Meaning you'll be able to discover trends in tests
+                and start to answer questions with data.
+            </p>
+            <p>
+                Ever wanted to mark a test run as flaky or find out how many times a specific test failed
+                historically?
+            </p>
+            <p>
+                Have some of your tests gotten slower over time? Was there a specific commit that resulted in a
+                regression?
+            </p>
+            <p>
+                <a href="https://gotest.io">gotest.io</a> aims to solve some of the annoyances around manually
+                parsing
+                <code class="code-offset">go test&nbsp;</code> output.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
